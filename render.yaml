@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: intelligent-liability-assistant
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: AI_PROVIDER
+        value: aliyun
+      - key: AI_MODEL
+        value: qwen-vl-max
+      - key: AI_BASE_URL
+        value: https://dashscope.aliyuncs.com/compatible-mode/v1
+      - key: DASHSCOPE_API_KEY
+        sync: false
