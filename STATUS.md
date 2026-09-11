@@ -40,3 +40,4 @@
 - GitHub 当前提供源码展示，尚未部署为公网可访问的在线 Demo；本地预览仍使用 `http://localhost:3000`。
 - 待在 Render 控制台连接 GitHub、填写百炼密钥并完成首次部署验证。
 - Render 要求当前账号绑卡验证，改用 Vercel 免费部署；待在 Vercel 导入仓库并配置百炼密钥。
+- Vercel 首次部署因误识别为 Node 框架导致首页函数崩溃；已增加 `framework: null`，让 `public/` 作为静态网页、`api/` 作为服务端函数，待自动重新部署验证。
