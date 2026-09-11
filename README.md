@@ -42,6 +42,10 @@ npm test
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2F1371744007-hash%2Fintelligent-liability-assistant)
 
+## Vercel 免费部署
+
+本项目也提供 Vercel Functions 适配。将 GitHub 仓库导入 Vercel，Framework Preset 选择 **Other**，其余构建配置保持默认，并在 Environment Variables 中添加 `AI_PROVIDER=aliyun`、`AI_MODEL=qwen-vl-max`、`AI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1` 和仅在服务端保存的 `DASHSCOPE_API_KEY`。由于 Vercel Functions 的请求体限制，网页会限制单张图片不超过 2MB、图片合计不超过 3MB。
+
 ## 文件导航
 
 - `docs/REQUIREMENTS.md`：范围与安全要求
@@ -52,4 +56,5 @@ npm test
 - `lib/rules.js`：结果校验
 - `public/`：网页
 - `render.yaml`：Render 免费部署配置
+- `vercel.json`、`api/`：Vercel 部署配置与服务端函数
 - `STATUS.md`：当前进度和测试实况
