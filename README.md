@@ -2,6 +2,8 @@
 
 一个仅使用模拟数据的中文网页 Demo。浏览器端负责录入和预览材料，Node.js 服务端可调用阿里云百炼或 OpenAI 分析文字与图片，并对结构化结果做业务一致性校验。
 
+在线体验：[https://intelligent-liability-assistant.vercel.app](https://intelligent-liability-assistant.vercel.app)
+
 ## 如何启动
 
 1. 安装 Node.js 18 或更高版本（推荐当前 LTS）。
