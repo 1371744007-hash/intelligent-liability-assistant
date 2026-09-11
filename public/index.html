@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>逆向保价智能判责助手</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div><span class="eyebrow">个人学习 Demo · 模拟数据</span><h1>逆向保价智能判责助手</h1><p>把散落的案件材料归拢成可核对的责任建议，让证据不足的案件及时回到人工。</p></div><div id="apiBadge" class="badge">检查配置中…</div></header>
+<main>
+  <section class="panel"><div class="step">01</div><div class="row"><div><h2>报案信息</h2><p class="section-note">选择演示案例快速体验，或选择“自定义报案”录入自己的模拟材料。</p></div><label class="inline">演示案例<select id="caseSelect"><option value="">请选择演示案例…</option></select></label></div>
+    <label>模拟订单<select id="orderSelect"></select></label><div id="orderInfo" class="facts"></div>
+    <div id="customOrder" class="custom-order" hidden><div class="form-grid"><label>商品名称<input id="customProduct" type="text" placeholder="例如：智能手表"></label><label>是否有验货服务<select id="customService"><option>有</option><option>无</option><option>未知</option></select></label></div><fieldset><legend>验货项目（按实际记录勾选）</legend><div id="customItems" class="checks"></div></fieldset><label>验货结果<textarea id="customResult" rows="2" placeholder="填写系统跟单记录；不清楚时填写“未知”"></textarea></label></div>
+    <label>商家报案描述<textarea id="reportText" rows="6" placeholder="请描述发现的问题、时间线和已有证据。商家陈述会被标记为待核实材料。"></textarea></label>
+    <div class="upload"><label class="uploadBtn">＋ 添加 JPG / PNG<input id="imageInput" type="file" accept="image/jpeg,image/png" multiple hidden></label><span>可多选；单张不超过 8MB，总请求不超过 25MB</span></div><div id="previews" class="previews"></div>
+    <button id="analyzeBtn" class="primary">开始智能分析</button><p id="notice" role="alert"></p>
+  </section>
+  <section class="panel result-panel"><div class="step">02</div><h2>分析结果</h2><div id="emptyResult" class="empty">尚未分析。选择案例或填写材料后点击“开始智能分析”。</div><div id="result" hidden></div></section>
+  <details class="panel rules"><summary><span><span class="step">03</span><b>查看当前模拟规则</b></span><span>展开 / 收起</span></summary><div id="rulesText"></div></details>
+</main><footer>本工具仅作学习演示，不连接真实业务系统，也不执行赔付或追偿。</footer><script src="/app.js"></script></body></html>
