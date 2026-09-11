@@ -50,5 +50,5 @@ const server=http.createServer(async(req,res)=>{
     res.writeHead(405);res.end('Method not allowed');
   } catch(e){console.error(e);if(!res.headersSent)json(res,500,{error:e.message||'服务端错误'});}
 });
-if(require.main===module){const port=Number(process.env.PORT)||3000;server.listen(port,()=>console.log(`逆向保价智能判责助手已启动：http://localhost:${port}`));}
+if(require.main===module){const port=Number(process.env.PORT)||3000;server.listen(port,()=>console.log(`智能判责助手已启动：http://localhost:${port}`));}
 module.exports={server};
