@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/analyze.js": {
+      "maxDuration": 60,
+      "includeFiles": "docs/RULES.md"
+    },
+    "api/bootstrap.js": {
+      "includeFiles": "docs/RULES.md"
+    }
+  }
+}
