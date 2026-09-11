@@ -36,6 +36,10 @@ npm test
 
 自动化测试不调用模型 API，只验证页面、数据隔离和结构化业务校验，因此不计入判责准确率。真实模型评测需配置 API 后逐条运行 `docs/TEST_CASES.md` 中案例并如实记录。
 
+## Render 免费部署
+
+仓库根目录提供了 `render.yaml`。在 Render 中选择 **New Blueprint Instance**，连接本仓库并确认免费方案；创建时只需填写 `DASHSCOPE_API_KEY`。密钥由 Render 作为服务端环境变量保存，不会出现在网页或 Git 仓库中。免费服务闲置后可能休眠，首次重新打开需要等待一段时间。
+
 ## 文件导航
 
 - `docs/REQUIREMENTS.md`：范围与安全要求
@@ -45,4 +49,5 @@ npm test
 - `lib/openai.js`：多模态请求与结构化输出
 - `lib/rules.js`：结果校验
 - `public/`：网页
+- `render.yaml`：Render 免费部署配置
 - `STATUS.md`：当前进度和测试实况
