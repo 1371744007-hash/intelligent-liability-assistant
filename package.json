@@ -1,0 +1,11 @@
+{
+  "name": "reverse-insurance-claim-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "逆向保价智能判责助手演示项目",
+  "scripts": {
+    "start": "node launcher.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
