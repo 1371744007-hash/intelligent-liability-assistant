@@ -40,6 +40,8 @@ npm test
 
 仓库根目录提供了 `render.yaml`。在 Render 中选择 **New Blueprint Instance**，连接本仓库并确认免费方案；创建时只需填写 `DASHSCOPE_API_KEY`。密钥由 Render 作为服务端环境变量保存，不会出现在网页或 Git 仓库中。免费服务闲置后可能休眠，首次重新打开需要等待一段时间。
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2F1371744007-hash%2Fintelligent-liability-assistant)
+
 ## 文件导航
 
 - `docs/REQUIREMENTS.md`：范围与安全要求
